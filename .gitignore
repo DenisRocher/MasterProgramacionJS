@@ -1,0 +1,6 @@
+./.vscode/*
+*.code-workpace
+./.autogit/*
+.autogit/autogit.json
+.vscode/settings.json
+CursoJS.code-workspace
