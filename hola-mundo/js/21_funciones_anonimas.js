@@ -33,3 +33,17 @@ sumame(   5,7,
             console.log("la suma por 2 es: ", (dato*2))
             }
         );
+
+/**
+ * FUNCIONES DE FLECHA
+ * SIMILAR A FUNCTION CALLBACK, PERO LA SINTAXIS ES LA SIGUIENTE
+ * sumame(   5,7,
+          dato ==> {           //Esta es una function de callback
+            console.log("La suma es: ", dato);
+          },
+          (dato,dato2) ==> {
+            console.log("la suma por 2 es: ", (dato*2))
+            console.log("la multiplicacion por 2 es: ", (dato2*2))
+            }
+        );
+ */
