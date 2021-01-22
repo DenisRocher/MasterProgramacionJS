@@ -3,7 +3,7 @@
   <head>
     <title>Curso JavaSript</title>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-    <!--
+<!-- Scripts que se ejecutan ANTES de cargar la página
     <script>
       alert("Hola Mundo JS");
       alert("Bienvenido al curso de JS");
@@ -35,16 +35,30 @@
     <script type="text/javascript" src="./js/25_arrays.js"></script>
     <script type="text/javascript" src="./js/26_arrays_multi.js"></script>
     <script type="text/javascript" src="./js/27_ejerciciosarrays.js"></script>
+    <script type="text/javascript" src="./js/27_ejerciciosarrays.js"></script>
+    <script type="text/javascript" src="./js/30_eventos.js"></script>
+
   -->
-  <!-- Scripts que se ejecutan ANTES de cargar la página
-        <script type="text/javascript" src="./js/27_ejerciciosarrays.js"></script>
-  -->
+    <script type="text/javascript" src="./js/31_timers.js"></script>
 
   </head>
   <body>
   
     <h1 id="encabezado">Curso JavaSript</h1>
-    <p>Nuestro primer script en JS</p>
+    <p>
+      <!-- NO SE ACONSEJA MEZCLAR HTML + JS, MEJOR ENCAPSULAR
+      <button id="boton" ondblclick="cambiarColorRandom(this);">Cambiame de Color</button>
+      mejor usar eventos
+      -->
+      <button id="boton">Cambiame de Color</button>
+      <button id="stop">Parar el parpadeo</button>
+      <button id="start">Iniciar el parpadeo</button>
+      <br>
+      <hr>
+      <form>
+          <input type='text' name="nombre" id="campo_nbre" placeholder="Nombre"/>
+      </form>
+    </p>
 
     <section id='miseccion'>
       <h1>Listdo de textos de los DIV</h1>
@@ -59,9 +73,11 @@
     <div class="blue">¡Hola soy una caja 4!</div>
 
 
-    <!-- Scripts que se ejecutan DESPUES DE CARGAR la página -->
+    <!-- Scripts que se ejecutan DESPUES DE CARGAR la página 
     <script type="text/javascript" src="./js/28_DOM.js"></script>
     <script type="text/javascript" src="./js/29_BOM.js"></script>
+    -->
+
   
   </body>
 </html>
