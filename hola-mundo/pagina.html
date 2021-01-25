@@ -1,0 +1,74 @@
+<!DOCTYPE html lang="es">
+<html lang="es">
+  <head>
+    <title>Curso JS JSON</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+        <style>
+      .box{
+        width: 100%;
+        float: left;
+        margin: 20px;
+      }
+      .dashed{
+        border: 3px dashed black;
+        padding: 5px;
+      }
+    </style>
+
+  <!-- 
+    <script type="text/javascript" src="./js/33_json.js"></script>
+    <script type="text/javascript" src="./js/34_localStorage.js"></script>
+
+
+
+
+    -->
+    <script type="text/javascript" src="./js/35_EjercicioLocalStorage.js"></script>
+
+  </head>
+  <body>
+    <h1>AÑADE TU PELÍCULA</h1>
+    <form action="" method="POST" id="formAddPelicula"> <!-- 
+      NOTA: onsubmit="return false" permite evitar que se vuelve  redireccionar y recargar la misma página
+    -->
+      <label for="nombre">Nombre: </label><br>
+      <input type='text' name="nombre" id="addpelicula" placeholder="Nombre Película"/>
+      <span id="error_nbr"></span><br>
+      <br>
+      <button type="submit">GUARDAR</button>
+    </form>
+    <p>
+      <div id='lista_peliculas'>
+        <h2>Películas</h2>
+        <ul id='listPeliculas'>
+
+        </ul>
+      </div>
+    </p>
+
+    <form action="" method="POST" id="formBorrarPelicula">
+      <label for="nombre">Nombre: </label><br>
+      <input type='text' name="nombre" id="borraPelicula" placeholder="Nombre Película a borrar"/>
+      <span id="error_nbr"></span><br>
+      <br>
+      <button type="submit">Borrar</button>
+    </form>
+    <br><br><br><br><br><br><br>
+    <hr>
+
+    <p>
+      <h1>Curso 34_localStorage</h1>
+      <div id='localStorage' class="box dashed">
+        <h3>Contenido Local Storage</h3>
+      </div>
+      <br>
+      <hr>
+    </p>
+    <p>
+   <h1>Curso JSON</h1>
+    <div id='peliculas' class="box">
+      <h3>Listado de películas</h3>
+    </div>
+    </p>
+  </body>
+</html>
