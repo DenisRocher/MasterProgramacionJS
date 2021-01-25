@@ -1,0 +1,64 @@
+<!DOCTYPE html lang="es">
+<html lang="es">
+  <head>
+    <title>Ejercicio DOM,Eventos y funciones</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <script type="text/javascript" src="js/32_ejercicio_DOM_event_funciones.js"></script>
+    <style>
+      .box{
+        width: 200px;
+        float: left;
+        margin: 20px;
+      }
+      .dashed{
+        border: 3px dashed black;
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+      1. Formulario campos: Nombre, Apellidos y edad
+      2. Boton enviar el formulario: eventos submit
+      3. Mostrar datos por pantalla
+      4. Validación del formulario
+    -->
+     <h1>Ejercicio DOM, Eventos y funciones</h1>
+
+     <div class="box">
+       <form action="" method="POST" id="formulario" onsubmit="return false"> <!-- 
+          NOTA: onsubmit="return false" permite evitar que se vuelve  redireccionar y recargar la misma página
+        -->
+        
+          <label for="nombre">Nombre: </label><br>
+          <input type='text' name="nombre" id="campo_nbre" placeholder="Nombre"/>
+          <span id="error_nbr"></span><br>
+          <label for="apellidos">Apellidos: </label><br>
+          <input type='text' name="Apellidos" id="campo_apellidos" placeholder="Apellidos"/>
+          <span id='error_app'></span><br>  
+          <label for="edad">Edad: </label><br>
+          <input type='number' name="edad" id="campo_edad" placeholder="Edad"/>
+          <span id='error_edad'></span><br>
+          <br>
+          <input type="submit" value="Enviar" id="submit" />
+       </form>
+     </div>
+     <div class="box dashed">
+        <h5>Información del usuario</h5>
+        <!-- Solución 1, solo se crea el DIV sin contenido-->
+        
+        <!-- Solución 2, se crean los parafos con estilo listo, sin valor-->
+        <p id='p_nombre'>
+          Nombre: <span></span>
+        </p>
+        <p id='p_apellidos'>
+          Apellidos: <span></span>
+        </p>        
+        <p id='p_edad'>
+          Edad: <span></span>
+        </p>
+        <hr>
+     </div>
+
+  </body>
+</html>

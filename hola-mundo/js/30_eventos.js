@@ -40,7 +40,8 @@
       
       // EVENTO CLICK 'click' 'dblclick'
       boton.addEventListener('click',function(){
-        cambiarColorRandom(this)
+        cambiarColorRandom(this);
+       // this.style.border ='10px solid black';
         });
 
       // EVENTO MOUSEOVER

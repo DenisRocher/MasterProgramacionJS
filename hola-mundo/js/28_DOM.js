@@ -13,6 +13,8 @@
  *        #aaaa   ==> Elementos con id 'aaaa'
  *        .aaaa   ==> Elementos con clase 'aaaa'
  * 
+ *  NOTA: document.querySelector('#aaaa bbbb'), permite apuntar al objeto b que se ecnuentra dentro de ojetio aa
+ * 
  *    https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll
  *     document.querySelector('#aaaa');
  *        aaaa    ==> Selectiona elementos con el nombre de etiqueta 'aaaa'
