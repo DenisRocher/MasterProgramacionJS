@@ -18,15 +18,19 @@
       return getInfo();
       })
       .then(data => {
-        console.log('estudiante: '+data);
+        //console.log('estudiante: '+data);
         mostrarStudent(data);
         return getUsuarioJanet();
       })
       .then(data => data.json())
       .then(user =>{
-        console.log(user);
+        //console.log(user);
         mostrarJanet(user.data);
-      });
+      })
+      .catch(error => {
+        console.log(error);
+        alert('Error en las peticiones');
+      })
 
   function getUsuarios(params) {
     return fetch('https://reqres.in/api/users');
@@ -47,6 +51,7 @@
       var estudiante_str = '';      
       setTimeout(function(){
         estudiante_str = JSON.stringify(estudiante);
+        //estudiante_str = ''; (Para similar reject)
         if (typeof estudiante_str != 'string' || estudiante_str =='') return reject('error estudiante_str');
         return resolve(estudiante_str);
       }, 3000);
@@ -66,7 +71,7 @@
 
   function mostrarStudent(user){
       let nombreStd = document.createElement('h4');
-      console.log('mostrarStudent '+user);
+      //console.log('mostrarStudent '+user);
       var student = JSON.parse(user);
       nombreStd.innerHTML = student.nombre +' ' +student.apellidos +' ' +student.url;
       document.querySelector('#student').appendChild(nombreStd);
